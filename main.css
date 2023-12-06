@@ -34,7 +34,20 @@ nav {
     display: inline;
     line-height: 37px;
     font-size: 20px;
-    padding: 0px 10px;
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+a:hover {
+    background-color:black;
+}
+
+.bg-fade {
+    transition: 0.3s;
 }
 
 main {
@@ -69,3 +82,45 @@ footer {
 --dark-green: #012813ff;
 --pakistan-green: #063f1dff;
 */
+
+
+@media (max-width: 650px) {
+    h1 {
+        margin-bottom: 20px;
+    }
+    header {
+        flex-direction: column;
+        padding: 0;
+        background-color: #040b07;
+    }
+    .main-block {
+        flex-direction: column;
+    }
+    .main-block-text {
+        text-align: justif;
+        margin: auto 15px;
+    }
+    .main-block-text h2 {
+        text-align: center;
+    }
+
+    .nav-left {
+        padding-top: 25px;
+        background-color: #011508;
+    }
+
+    .nav-right {
+        display: flex;
+        padding: 15px 25px;
+    }
+
+    .navbar-link {
+        display: flex;
+        flex-grow: 1;
+        width: 100%
+    }
+
+    a {
+        width: 100%;
+    }
+}
