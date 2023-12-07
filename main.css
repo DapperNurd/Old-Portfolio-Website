@@ -18,7 +18,7 @@ header {
     background-color: #011508;
     display: flex;
     justify-content: space-between;
-    padding: 25px 60px;
+    padding: 25px 45px 25px 60px;
     box-shadow: 0px 0px 15px black;
 }
 
@@ -36,14 +36,15 @@ nav {
     font-size: 20px;
 }
 
-a {
+header a {
     color:white;
     text-decoration: none;
     padding: 10px 15px;
 }
 
-a:hover {
+header a:hover, header a:focus {
     background-color:black;
+    box-shadow: 0px 0px 5px 0px white;
 }
 
 .bg-fade {
@@ -75,6 +76,27 @@ footer {
     padding: 15px;
 }
 
+#drop-button {
+    display: none;
+    background-color: #011508;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 20px 16px;
+    padding: 5px 14px;
+    font-size: 25px;
+}
+
+#drop-button:hover {
+    background-color: #040b07ff;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
 /*
 --black: #010101ff;
 --black-2: #040b07ff;
@@ -83,8 +105,11 @@ footer {
 --pakistan-green: #063f1dff;
 */
 
-
 @media (max-width: 650px) {
+    #drop-button {
+        display: block;
+    }
+
     h1 {
         margin-bottom: 20px;
     }
@@ -93,34 +118,45 @@ footer {
         padding: 0;
         background-color: #040b07;
     }
+    header a:hover, header a:focus {
+        background-color: #011508;
+    }
     .main-block {
         flex-direction: column;
+        align-items: center;
     }
     .main-block-text {
-        text-align: justif;
+        text-align: justify;
         margin: auto 15px;
     }
-    .main-block-text h2 {
-        text-align: center;
-    }
 
-    .nav-left {
+    #nav-left {
         padding-top: 25px;
         background-color: #011508;
     }
 
-    .nav-right {
+    #nav-right {
         display: flex;
-        padding: 15px 25px;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0px;
+        width: 100%;
     }
 
     .navbar-link {
-        display: flex;
         flex-grow: 1;
+        flex-direction: space-between;
+        display: block;
         width: 100%
     }
 
-    a {
+    .bg-fade {
+        display: block;
         width: 100%;
+        padding: 10px 0px
+    }
+
+    .hide {
+        display: none !important;
     }
 }

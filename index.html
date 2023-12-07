@@ -3,28 +3,30 @@
     <head>
         <title>Ben Bonus</title>
         <link href="main.css" rel="stylesheet"/>
+        <script type="text/javascript" src="menu_button.js"></script>
     </head>
     <body>
         <header>
-            <div class="nav-left">
+            <div id="nav-left">
                 <h1>Ben Bonus</h1>
+                <button id="drop-button" onclick="dropFunction()">v</button>
             </div>
-            <div class="nav-right">
+            <div id="nav-right" class="hide">
                 <nav>
-                    <div class="navbar-link"><a class="bg-fade" href="">About Me</a></div>
-                    <div class="navbar-link"><a class="bg-fade" href="">Projects</a></div>
-                    <div class="navbar-link"><a class="bg-fade" href="">References</a></div>
+                    <div class="navbar-link"><a class="bg-fade" href="index.html">About Me</a></div>
+                    <div class="navbar-link"><a class="bg-fade" href="projects.html">Projects</a></div>
+                    <div class="navbar-link"><a class="bg-fade" href="">Resume</a></div>
                 </nav>
             </div>
         </header>
         <main>
             <div class="main-block">
                 <div class="main-block-image"><img src="temp-pic.jpg" alt="About Me" width="200" style="border-radius: 100%;"></div>
-                <div class="main-block-text"><h2>Ben Bonus</h2>I'm Ben. I grew up in Coeur d'Alene, Idaho. When I was very young, I was heavily into video games. Not only did I love playing them, but I wanted to make them. So even at a young age, I have had a passion for computers, and since as early as middle school, I knew I wanted to pursue computer science. Video games were a motivation for me to learn, and because of that I have been learning programming since as early as middle school. Now, I am attending North Idaho College, and am in my second year. I am also currently a research and development intern for Agency Software.</div>
+                <div class="main-block-text"><h2>Ben Bonus</h2>I'm Ben. I grew up in Coeur d'Alene, Idaho. When I was very young, I was heavily into video games. Not only did I love playing them, but I wanted to make them. So even at a young age, I have had a passion for computers; I knew I wanted to pursue computer science.<br><br>Video games were a motivation for me to learn, and because of that I have been learning programming since as early as middle school. Over the years, I have worked on various projects. Now, I am attending North Idaho College, and am in my second year. I am also currently a research and development intern for Agency Software.</div>
             </div>
         </main>
         <footer>
-            Contact me at <strong>jbbonus@nic.edu</strong>
+            Contact me at <strong><a href="mailto:jbbonus@nic.edu" >jbbonus@nic.edu</strong>
         </footer>
     </body>
 </html>
