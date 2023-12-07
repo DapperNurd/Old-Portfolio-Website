@@ -62,7 +62,18 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 30px;
+    align-items: center;
+}
+
+.main-block a {
+    color: white;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 5px;
+}
+
+.main-block a:hover {
+    color: #c6ffbd;
+    transition: 0.1s;
 }
 
 .main-block-text {
@@ -98,6 +109,14 @@ footer {
     background-color: #040b07ff;
     transition: 0.3s;
     cursor: pointer;
+}
+
+.separator {
+    background-color: #012813ff;
+    border-radius: 5px;
+    width: 60%;
+    height: 5px;
+    margin: 50px auto;
 }
 
 /*
