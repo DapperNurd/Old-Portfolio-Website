@@ -1,6 +1,6 @@
 html {
     height: 100%;
-    font-family: ar;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -78,6 +78,8 @@ footer {
 }
 
 #drop-button {
+    width: 40px;
+    height: 40px;
     display: none;
     background-color: #011508;
     color: white;
@@ -87,8 +89,8 @@ footer {
     position: absolute;
     right: 0;
     top: 0;
-    margin: 20px 16px;
-    padding: 5px 14px;
+    margin: 25px 16px;
+    /* padding: 5px 14px; */
     font-size: 25px;
 }
 
@@ -112,7 +114,7 @@ footer {
     }
 
     h1 {
-        margin-bottom: 20px;
+        margin-bottom: 35px;
     }
     header {
         flex-direction: column;
@@ -143,6 +145,7 @@ footer {
         align-items: stretch;
         padding: 0px;
         width: 100%;
+        border-top: 2px solid #012813;
     }
 
     .navbar-link {
