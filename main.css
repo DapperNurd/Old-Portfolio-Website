@@ -62,11 +62,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .main-block-text {
     text-align: justify;
-    max-width: 500px;
+    width: 50%;
     margin-left: 60px ;
 }
 
@@ -128,6 +129,7 @@ footer {
     .main-block-text {
         text-align: justify;
         margin: auto 15px;
+        width: 85%;
     }
 
     #nav-left {
